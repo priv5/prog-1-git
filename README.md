@@ -1,1 +1,1 @@
-man
+mans pirmais projekts
