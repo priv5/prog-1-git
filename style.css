@@ -136,12 +136,18 @@ body {
     position: relative;
 }
 
-.slider-image {
+.image.active {
+    display: block;
     width: 100%;
     height: 400px;
 }
 
-.slider-prev, .slider-prev2 {
+.image {
+    display: none;
+    
+}
+
+.slider-prev, .slider-next {
     position: absolute;
     font-size: 30px;
     font-weight: bold;
@@ -159,7 +165,7 @@ body {
    
 }
 
-.slider-prev2 {
+.slider-next {
 	position: absolute;
     right: -20px;
     top: 50%;
@@ -194,10 +200,10 @@ body {
 }
 
 .slider-prev:hover,
-.slider-prev2:hover {
+.slider-next:hover {
     transition: 1s;
     cursor: pointer;
-    color: yellow;
+    color: red;
 }
 
 .content {
