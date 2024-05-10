@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datubāze</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='First_page.html'">Atpakaļ uz sākumlapu</button>
+    <div class="main-text">Publiskā datubāze</div>
+    <div class="small-text">Šajā datubāze Tu vari apskatīt pieejamās vielas un aprīkojumu </div>
+
+
+    <div class="button-container">
+        <button class="register-button" data-value="vielas.json">Viela</button>
+        <button class="register-button" data-value="inventars.json">Inventārs</button>
+        <button class="register-button" data-value="both">Rādīt visus</button>
+    </div>
+    
+    <div class="section-1" style="flex: 2;">
+        <table id="substances-table">
+            <tr>
+                <th>id</th>
+                <th>nosaukums</th>
+                <th>tips</th>
+                <th>apakstips</th>
+                <th>skaits</th>
+                <th>mervienibas</th>
+                <th>komentari</th>                                     
+                <th>daudzums</th>
+            </tr>
+        </table>
+    </div>
+
+    <span id="name"></span>
+    <div class="section-2" style="flex: 3;">
+        <button class="report-button">Ziņot par kļūdu</button>
+    </div>
+    
+    <script src="script.js"><span id="name"> 
+    
+        </span></script>
+    
+</body>
+</html>
+
